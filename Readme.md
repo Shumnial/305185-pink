@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nikita Shumakov](https://up.htmlacademy.ru/adaptive/12/user/305185).
-* Наставник: `Неизвестно`.
+* Наставник: [Liza Pozdnyakova](https://up.htmlacademy.ru/adaptive/12/user/5608).
 
 ---
 
