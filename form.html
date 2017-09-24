@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="#" alt="Логотип Pink"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main>
+      <form class="contest-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="contest-form__descr">Поделитесь своей историей и
+          получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <div class="fullname-data">
+          <label for="last-name">Фамилия:</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42" required>
+          <label for="first-name">Имя:</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя &#42" required>
+          <label for="patronymic">Отчество:</label>
+          <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
+        </div>
+        <div class="personal-achievements">
+          <h3 class="personal-achievements__title">Ваши безбашенные достижения в путешествии</h3>
+          <input type="checkbox" name="achievement" id="shark-selfie" value="shark-selfie">
+          <label for="shark-selfie">Сделал селфи с акулой</label>
+          <input type="checkbox" name="achievement" id="burned" value="burned">
+          <label for="burned">Обгорел на пляже</label>
+          <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
+          <label for="chuck-norris">Видел Чака Норриса</label>
+          <input type="checkbox" name="achievement" id="souvenirs" value="souvenirs">
+          <label for="souvenirs">Накупил сувениров</label>
+          <input type="checkbox" name="achievement" id="held-tower" value="held-tower">
+          <label for="held-tower"></label>
+          <input type="checkbox" name="achievement" id="destroyed-hotel" value="destroyed-hotel">
+          <label for="destroyed-hotel">Разгромил отель</label>
+        </div>
+        <div class="contacts-data">
+          <label for="telephone">Номер телефона</label>
+          <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+          <label for="email">Адрес почты</label>
+          <input type="email" name="email" id="email" placeholder="Введите почту &#42;">
+        </div>
+        <div class="app-question">
+          <h3 class="app-question__title">С каким приложением путешествовали?</h3>
+          <input type="radio" name="application-type" id="ios" value="ios">
+          <label for="ios">Pink для iOS</label>
+          <input type="radio" name="application-type" id="android" value="android">
+          <label for="android">Pink на Android</label>
+          <input type="radio" name="application-type" id="windows-phone" value="windows-phone">
+          <label for="windows-phone">Windows Phone</label>
+        </div>
+        <div class="emotions-descr">
+          <h3 class="emotions-descr">Опишите свои эмоции</h3>
+          <textarea name="emotions-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <input class="btn" type="submit" value="Отправить форму">
+        <p class="contest-form__note">* — обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="#" alt="Логотип Pink"></a>
+      <div class="social-links">
+        <a class="social-links__link" href="#"></a>
+        <a class="social-links__link" href="#"></a>
+        <a class="social-links__link" href="#"></a>
+      </div>
+      <a class="copyright" href="https://htmlacademy.ru/">Разработано</a>
+    </footer>
+  </body>
+</html>
