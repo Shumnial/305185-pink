@@ -5,8 +5,108 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="top-menu">
+        <a class="top-menu__logo"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+        <button type="button" class="top-menu__toggle">Меню</button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <a class="btn" href="#">Скачать приложение</a>
+      <div class="available-info">
+        <p class="available-info__images">
+          <a class="available-info__image available-info__image--ios" href="#"></a>
+          <a class="available-info__image available-info__image--android" href="#"></a>
+          <a class="available-info__image available-info__image--wphone" href="#"></a>
+        </p>
+        <p class="availability-info__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <section class="features">
+        <div class="features__titles">
+          <h1>Устали от серости мегаполиса?</h1>
+          <h2>Нам есть, что вам предложить!</h2>
+        </div>
+        <div class="features__list">
+          <div class="features__item">
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="features__item">
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="features__item">
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <blockquote class="reviews__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <div class="reviews__thumbs">
+          <button type="button" class="reviews__thumb"></button>
+          <button type="button" class="reviews__thumb"></button>
+          <button type="button" class="reviews__thumb"></button>
+        </div>
+      </section>
+      <section class="hot-deals">
+        <table>
+          <tr>
+            <th>База 1,99 USD</th>
+            <th>Стандарт 3,99 USD</th>
+            <th>Анлим 9,99 USD</th>
+          </tr>
+          <tr class="hot-deals__advantage">
+            <td>Розовый фильтр</td>
+            <td>Розовый фильтр</td>
+            <td>Розовый фильтр</td>
+          </tr>
+          <tr class="hot-deals__advantage">
+            <td>Смайлики</td>
+            <td>Смайлики</td>
+            <td>Смайлики</td>
+          </tr>
+          <tr class="hot-deals__advantage">
+            <td>Комментарии</td>
+            <td>Комментарии</td>
+            <td>Комментарии</td>
+          </tr>
+        </table>
+        <div class="hot-deals__thumbs">
+          <button type="button" class="hot-deals__thumb"></button>
+          <button type="button" class="hot-deals__thumb"></button>
+          <button type="button" class="hot-deals__thumb"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+        <div class="contacts-info">
+          <p class="contacts-info__title">Звоните:</p>
+          <a class="contacts-info__tel" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+        </div>
+        <div class="contacts-info">
+          <p class="contacts-info__title">Пишите:</p>
+          <a class="contacts-info__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts-info">
+          <p class="contacts-info__title">Приезжайте в гости:</p>
+          <p class="contacts-info__address">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <div class="map"></div>
+      </section>
+    </footer>
   </body>
 </html>
