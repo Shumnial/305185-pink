@@ -8,7 +8,7 @@
     <header class="page-header">
       <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="#" alt="Логотип Pink"></a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Меню</button>
+        <button type="button" class="main-nav__toggle">Меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
@@ -57,35 +57,35 @@
           <label for="ios">Pink для iOS</label>
           <input type="radio" name="application-type" id="android" value="android">
           <label for="android">Pink на Android</label>
-          <input type="radio" name="application-type" id="windows-phone" value="windows-phone">
-          <label for="windows-phone">Windows Phone</label>
+          <input type="radio" name="application-type" id="wphone" value="wphone">
+          <label for="wphone">Windows Phone</label>
         </div>
         <div class="emotions-descr">
-          <h3 class="emotions-descr">Опишите свои эмоции</h3>
-          <textarea name="emotions-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <h3 class="contest-form__title">Опишите свои эмоции</h3>
+          <textarea name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <input class="btn" type="submit" value="Отправить форму">
         <p class="contest-form__note">* — обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="#" alt="Логотип Pink"></a>
-      <div class="social-links">
-        <a class="social-links__link" href="#"></a>
-        <a class="social-links__link" href="#"></a>
-        <a class="social-links__link" href="#"></a>
+      <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+      <div class="social">
+        <a class="social__link social__link--twitter"></a>
+        <a class="social__link social__link--facebook"></a>
+        <a class="social__link social__link--play"></a>
       </div>
       <a class="copyright" href="https://htmlacademy.ru/">Разработано</a>
     </footer>
     <div class="popup popup--success">
         <p class="popup__title">Что-то пошло не так</p>
         <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup__button btn">Ок</button>
+        <button type="button" class="popup__button btn">Ок</button>
     </div>
     <div class="popup popup--error">
       <p class="popup__title">Ваша заявка отправлена</p>
       <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="popup__button btn">Закрыть окно</button>
+      <button type="button" class="popup__button btn">Закрыть окно</button>
     </div>
   </body>
 </html>
