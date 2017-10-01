@@ -17,22 +17,22 @@
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main>
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="contest-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="contest-form__descr">Поделитесь своей историей и
           получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <div class="fullname-data">
-          <label for="last-name">Фамилия:</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
-          <label for="first-name">Имя:</label>
-          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя &#42;" required>
-          <label for="patronymic">Отчество:</label>
-          <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          <label for="last-name" class="contest-form__field-name">Фамилия:</label>
+          <input class="contest-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
+          <label for="first-name" class="contest-form__field-name">Имя:</label>
+          <input class="contest-form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя &#42;" required>
+          <label for="patronymic" class="contest-form__field-name">Отчество:</label>
+          <input class="contest-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
         </div>
         <div class="personal-achievements">
-          <h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
+          <h3 class="contest-form__subtitle">Ваши безбашенные достижения в путешествии</h3>
           <input type="checkbox" name="achievement" id="shark-selfie" value="shark-selfie">
           <label for="shark-selfie">Сделал селфи с акулой</label>
           <input type="checkbox" name="achievement" id="burned" value="burned">
@@ -47,13 +47,13 @@
           <label for="destroyed-hotel">Разгромил отель</label>
         </div>
         <div class="contacts-data">
-          <label for="telephone">Номер телефона</label>
-          <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-          <label for="email">Адрес почты</label>
-          <input type="email" name="email" id="email" placeholder="Введите почту &#42;">
+          <label for="telephone" class="contest-form__field-name">Номер телефона</label>
+          <input class="contest-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+          <label for="email" class="contest-form__field-name">Адрес почты</label>
+          <input class="contest-form__field" type="email" name="email" id="email" placeholder="Введите почту &#42;">
         </div>
         <div class="app-question">
-          <h3 class="contest-form__title">С каким приложением путешествовали?</h3>
+          <h3 class="contest-form__subtitle">С каким приложением путешествовали?</h3>
           <input type="radio" name="application-type" id="ios" value="ios">
           <label for="ios">Pink для iOS</label>
           <input type="radio" name="application-type" id="android" value="android">
@@ -62,10 +62,10 @@
           <label for="wphone">Windows Phone</label>
         </div>
         <div class="emotions-descr">
-          <h3 class="contest-form__title">Опишите свои эмоции</h3>
+          <h3 class="contest-form__subtitle">Опишите свои эмоции</h3>
           <textarea name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <input class="btn" type="submit" value="Отправить форму">
+        <input class="contest-form__button btn" type="submit" value="Отправить форму">
         <p class="contest-form__note">* — обязательные поля</p>
       </form>
     </main>
