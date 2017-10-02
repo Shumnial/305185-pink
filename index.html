@@ -3,49 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="top-menu">
-        <a class="top-menu__logo"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+        <a class="top-menu__logo" href="#"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
         <button type="button" class="top-menu__toggle">Меню</button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <a class="btn" href="#">Скачать приложение</a>
-      <div class="available-info">
-        <p class="available-info__images">
-          <a class="available-info__image available-info__image--ios" href="#"></a>
-          <a class="available-info__image available-info__image--android" href="#"></a>
-          <a class="available-info__image available-info__image--wphone" href="#"></a>
+      <div class="available-devices">
+        <div class="available-devices__main-image"></div>
+        <a class="btn" href="#">Скачать приложение</a>
+        <p class="available-devices__images">
+          <a class="available-devices__image available-devices__image--ios" href="#"></a>
+          <a class="available-devices__image available-devices__image--android" href="#"></a>
+          <a class="available-devices__image available-devices__image--wphone" href="#"></a>
         </p>
-        <p class="availability-info__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="available-devices__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
       <section class="features">
-        <div class="features__titles">
-          <h1>Устали от серости мегаполиса?</h1>
-          <h2>Нам есть, что вам предложить!</h2>
-        </div>
+        <h1 class="features__title">Устали от серости мегаполиса?</h1>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
         <div class="features__list">
           <div class="features__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
           <div class="features__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
           <div class="features__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
       </section>
@@ -62,25 +62,25 @@
       </section>
       <section class="hot-deals">
         <table>
-          <tr>
-            <th>База 1,99 USD</th>
-            <th>Стандарт 3,99 USD</th>
-            <th>Анлим 9,99 USD</th>
+          <tr class="hot-deals__titles">
+            <th class="hot-deals__name">База 1,99 USD</th>
+            <th class="hot-deals__name">Стандарт 3,99 USD</th>
+            <th class="hot-deals__name">Анлим 9,99 USD</th>
           </tr>
-          <tr class="hot-deals__advantage">
-            <td>Розовый фильтр</td>
-            <td>Розовый фильтр</td>
-            <td>Розовый фильтр</td>
+          <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage">Розовый фильтр</td>
+            <td class="hot-deals__advantage">Розовый фильтр</td>
+            <td class="hot-deals__advantage">Розовый фильтр</td>
           </tr>
-          <tr class="hot-deals__advantage">
-            <td>Смайлики</td>
-            <td>Смайлики</td>
-            <td>Смайлики</td>
+          <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage">Смайлики</td>
+            <td class="hot-deals__advantage">Смайлики</td>
+            <td class="hot-deals__advantage">Смайлики</td>
           </tr>
-          <tr class="hot-deals__advantage">
-            <td>Комментарии</td>
-            <td>Комментарии</td>
-            <td>Комментарии</td>
+          <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage">Комментарии</td>
+            <td class="hot-deals__advantage">Комментарии</td>
+            <td class="hot-deals__advantage">Комментарии</td>
           </tr>
         </table>
         <div class="hot-deals__thumbs">
@@ -95,15 +95,15 @@
         <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
         <div class="contacts-info">
           <p class="contacts-info__title">Звоните:</p>
-          <a class="contacts-info__tel" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+          <a class="contacts-info__data" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
         </div>
         <div class="contacts-info">
           <p class="contacts-info__title">Пишите:</p>
-          <a class="contacts-info__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts-info__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts-info">
           <p class="contacts-info__title">Приезжайте в гости:</p>
-          <p class="contacts-info__address">ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts-info__data">ул. Большая Конюшенная, 19/8</p>
         </div>
         <div class="map"></div>
       </section>
