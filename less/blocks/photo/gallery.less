@@ -1,8 +1,15 @@
+.gallery__wrapper {
+  .container();
+}
+
 .gallery__title {
+  .container();
+  text-align: center;
   min-height: 237px;
-  width: 320px;
   font-size: 24px;
   font-weight: 300;
+  color: white;
+  margin-top: -71px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -14,17 +21,20 @@
   line-height: 30px;
 }
 
-.gallery-item__author {
-  font-size: 14px;
-  font-weight: 700;
-  font-style: normal;
+.gallery__subtitle--align {
+  .container();
 }
 
-.gallery-item__text {
-  font-size: 14px;
-}
+@media (min-width: @tablet) {
 
-.gallery-item__likes {
-  font-size: 12px;
-  text-transform: uppercase;
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery__title {
+    min-height: 310px;
+    margin-top: -114px;
+  }
 }

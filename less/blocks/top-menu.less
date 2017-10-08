@@ -1,3 +1,16 @@
-.top-menu {
-  background-color: #283645;
+.top-menu__wrapper {
+  .container();
+  position: relative;
+  z-index: 10;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet) {
+  .top-menu__wrapper {
+    min-height: 110px;
+  }
 }

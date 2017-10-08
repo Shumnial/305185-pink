@@ -8,56 +8,75 @@
   <body>
     <header class="page-header">
       <div class="top-menu">
-        <a class="top-menu__logo" href="#"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
-        <button type="button" class="top-menu__toggle">Меню</button>
+        <div class="top-menu__wrapper">
+          <a class="top-menu__logo" href="#"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+          <button type="button" class="top-menu__toggle">Меню</button>
+        </div>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <div class="available-devices">
-        <div class="available-devices__main-image"></div>
-        <a class="btn" href="#">Скачать приложение</a>
-        <p class="available-devices__images">
-          <a class="available-devices__image available-devices__image--ios" href="#"></a>
-          <a class="available-devices__image available-devices__image--android" href="#"></a>
-          <a class="available-devices__image available-devices__image--wphone" href="#"></a>
-        </p>
-        <p class="available-devices__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="available-devices__wrapper">
+          <h1 class="available-devices__title">Взгляните на жизнь иначе!</h1>
+          <a class="available-devices__button btn" href="#">Скачать приложение</a>
+          <p class="available-devices__images">
+            <a class="available-devices__image available-devices__image--ios" href="#"></a>
+            <a class="available-devices__image available-devices__image--android" href="#"></a>
+            <a class="available-devices__image available-devices__image--wphone" href="#"></a>
+          </p>
+          <p class="available-devices__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
       <section class="features">
-        <h1 class="features__title">Устали от серости мегаполиса?</h1>
-        <h2 class="features__title">Нам есть, что вам предложить!</h2>
-        <div class="features__list">
-          <div class="features__item">
-            <h3 class="features__item-title">Поднимает настроение</h3>
-            <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="features__item">
-            <h3 class="features__item-title">Меняет мир вокруг</h3>
-            <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="features__item">
-            <h3 class="features__item-title">Заводит новых друзей</h3>
-            <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features__wrapper">
+          <h2 class="features__title features__title">Устали от серости мегаполиса?</h2>
+          <h2 class="features__title features__title--narrow">Нам есть, что вам предложить!</h2>
+          <div class="features__list">
+            <div class="features__item">
+              <h3 class="features__item-title">Поднимает настроение</h3>
+              <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__item-title">Меняет мир вокруг</h3>
+              <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__item-title">Заводит новых друзей</h3>
+              <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
       </section>
+      <article class="effect-study">
+        <div class="effect-study__wrapper">
+          <h3 class="effect-study__title">Эффект на 24 часа!</h3>
+          <p class="effect-study__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки
+          </p>
+          <a href="#" class="effect-study__link">Узнать больше об исследовании</a>
+        </div>
+      </article>
       <section class="reviews">
-        <blockquote class="reviews__item">
-          <cite class="reviews__author-name">Николай Петров</cite>
-          <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
-        <div class="reviews__thumbs">
-          <button type="button" class="reviews__thumb"></button>
-          <button type="button" class="reviews__thumb"></button>
-          <button type="button" class="reviews__thumb"></button>
+        <div class="reviews__wrapper">
+          <blockquote class="reviews__item">
+            <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <div class="reviews__thumbs">
+            <button type="button" class="reviews__thumb"></button>
+            <button type="button" class="reviews__thumb"></button>
+            <button type="button" class="reviews__thumb"></button>
+          </div>
         </div>
       </section>
       <section class="hot-deals">
@@ -89,24 +108,37 @@
           <button type="button" class="hot-deals__thumb"></button>
         </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+          <div class="contacts-info">
+            <p class="contacts-info__title">Звоните:</p>
+            <a class="contacts-info__data" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+          </div>
+          <div class="contacts-info contacts-info--order">
+            <p class="contacts-info__title">Пишите:</p>
+            <a class="contacts-info__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts-info">
+            <p class="contacts-info__title">Приезжайте в гости:</p>
+            <p class="contacts-info__data">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+      </section>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1507121159797" allowfullscreen></iframe>
+      </div>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
-        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-        <div class="contacts-info">
-          <p class="contacts-info__title">Звоните:</p>
-          <a class="contacts-info__data" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <div class="social">
+          <a class="social__link social__link--twitter"></a>
+          <a class="social__link social__link--facebook"></a>
+          <a class="social__link social__link--play"></a>
         </div>
-        <div class="contacts-info">
-          <p class="contacts-info__title">Пишите:</p>
-          <a class="contacts-info__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts-info">
-          <p class="contacts-info__title">Приезжайте в гости:</p>
-          <p class="contacts-info__data">ул. Большая Конюшенная, 19/8</p>
-        </div>
-        <div class="map"></div>
-      </section>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
+      </div>
     </footer>
   </body>
 </html>

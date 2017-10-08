@@ -9,22 +9,25 @@
     <header class="page-header">
       <div class="top-menu">
         <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+        <button type="button" class="main-nav__toggle">Меню</button>
       </div>
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggle">Меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="contest-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="contest-form__descr">Поделитесь своей историей и
-          получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
         <div class="fullname-data">
           <label for="last-name" class="contest-form__field-name">Фамилия:</label>
           <input class="contest-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
@@ -81,9 +84,9 @@
       <a class="social__copyright" href="https://htmlacademy.ru/">Разработано</a>
     </footer>
     <div class="popup popup--success">
-        <p class="popup__title">Что-то пошло не так</p>
-        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button type="button" class="popup__button btn">Ок</button>
+      <p class="popup__title">Что-то пошло не так</p>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button" class="popup__button btn">Ок</button>
     </div>
     <div class="popup popup--error">
       <p class="popup__title">Ваша заявка отправлена</p>
