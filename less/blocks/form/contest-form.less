@@ -1,12 +1,22 @@
+.contest-form__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+}
+
 .contest-form__title {
   font-size: 24px;
   font-weight: 300;
   min-height: 237px;
-  width: 320px;
   color: white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.contest-form__descr {
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .contest-form__subtitle {
@@ -38,4 +48,38 @@
 .contest-form__note {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.contest-form__note--show {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .contest-form__button {
+    margin-left: 0;
+    order: 5;
+  }
+
+  .contest-form__note {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop) {
+  .contest-form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contest-form__button {
+    margin-left: 0;
+  }
+
+  .contest-form__note {
+    display: none;
+  }
+
+  .contest-form__note--show {
+    display: block;
+  }
 }

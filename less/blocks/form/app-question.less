@@ -1,3 +1,17 @@
 .app-question {
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet) {
+  .app-question {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop) {
+  .app-question {
+    width: 49%;
+  }
 }

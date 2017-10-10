@@ -25,63 +25,69 @@
     <main>
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="contest-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="contest-form__descr">Поделитесь своей историей и
-          получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        </p>
-        <div class="fullname-data">
-          <label for="last-name" class="contest-form__field-name">Фамилия:</label>
-          <input class="contest-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
-          <label for="first-name" class="contest-form__field-name">Имя:</label>
-          <input class="contest-form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя &#42;" required>
-          <label for="patronymic" class="contest-form__field-name">Отчество:</label>
-          <input class="contest-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+        <div class="contest-form__wrapper">
+          <p class="contest-form__descr">Поделитесь своей историей и
+            получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
+          <div class="fullname-data">
+            <label for="last-name" class="contest-form__field-name">Фамилия:</label>
+            <input class="contest-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
+            <label for="first-name" class="contest-form__field-name">Имя:</label>
+            <input class="contest-form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя &#42;" required>
+            <label for="patronymic" class="contest-form__field-name">Отчество:</label>
+            <input class="contest-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="personal-achievements">
+            <h3 class="contest-form__subtitle">Ваши безбашенные достижения в путешествии</h3>
+            <input type="checkbox" name="achievement" id="shark-selfie" value="shark-selfie">
+            <label for="shark-selfie">Сделал селфи с акулой</label>
+            <input type="checkbox" name="achievement" id="burned" value="burned">
+            <label for="burned">Обгорел на пляже</label>
+            <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
+            <label for="chuck-norris">Видел Чака Норриса</label>
+            <input type="checkbox" name="achievement" id="souvenirs" value="souvenirs">
+            <label for="souvenirs">Накупил сувениров</label>
+            <input type="checkbox" name="achievement" id="held-tower" value="held-tower">
+            <label for="held-tower">Удержал башню</label>
+            <input type="checkbox" name="achievement" id="destroyed-hotel" value="destroyed-hotel">
+            <label for="destroyed-hotel">Разгромил отель</label>
+          </div>
+          <div class="contacts-data">
+            <label for="telephone" class="contest-form__field-name">Номер телефона</label>
+            <input class="contest-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            <label for="email" class="contest-form__field-name">Адрес почты</label>
+            <input class="contest-form__field" type="email" name="email" id="email" placeholder="Введите почту &#42;">
+          </div>
+          <div class="app-question">
+            <h3 class="contest-form__subtitle">С каким приложением путешествовали?</h3>
+            <input type="radio" name="application-type" id="ios" value="ios">
+            <label for="ios">Pink для iOS</label>
+            <input type="radio" name="application-type" id="android" value="android">
+            <label for="android">Pink на Android</label>
+            <input type="radio" name="application-type" id="wphone" value="wphone">
+            <label for="wphone">Windows Phone</label>
+          </div>
+          <div class="emotions-descr">
+            <h3 class="contest-form__subtitle">Опишите свои эмоции</h3>
+            <textarea name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <input class="contest-form__button btn" type="submit" value="Отправить форму">
+          <p class="contest-form__note">* — обязательные поля</p>
+          <p class="contest-form__note contest-form__note--show">* — обязательные для заполнения поля</p>
         </div>
-        <div class="personal-achievements">
-          <h3 class="contest-form__subtitle">Ваши безбашенные достижения в путешествии</h3>
-          <input type="checkbox" name="achievement" id="shark-selfie" value="shark-selfie">
-          <label for="shark-selfie">Сделал селфи с акулой</label>
-          <input type="checkbox" name="achievement" id="burned" value="burned">
-          <label for="burned">Обгорел на пляже</label>
-          <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
-          <label for="chuck-norris">Видел Чака Норриса</label>
-          <input type="checkbox" name="achievement" id="souvenirs" value="souvenirs">
-          <label for="souvenirs">Накупил сувениров</label>
-          <input type="checkbox" name="achievement" id="held-tower" value="held-tower">
-          <label for="held-tower"></label>
-          <input type="checkbox" name="achievement" id="destroyed-hotel" value="destroyed-hotel">
-          <label for="destroyed-hotel">Разгромил отель</label>
-        </div>
-        <div class="contacts-data">
-          <label for="telephone" class="contest-form__field-name">Номер телефона</label>
-          <input class="contest-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-          <label for="email" class="contest-form__field-name">Адрес почты</label>
-          <input class="contest-form__field" type="email" name="email" id="email" placeholder="Введите почту &#42;">
-        </div>
-        <div class="app-question">
-          <h3 class="contest-form__subtitle">С каким приложением путешествовали?</h3>
-          <input type="radio" name="application-type" id="ios" value="ios">
-          <label for="ios">Pink для iOS</label>
-          <input type="radio" name="application-type" id="android" value="android">
-          <label for="android">Pink на Android</label>
-          <input type="radio" name="application-type" id="wphone" value="wphone">
-          <label for="wphone">Windows Phone</label>
-        </div>
-        <div class="emotions-descr">
-          <h3 class="contest-form__subtitle">Опишите свои эмоции</h3>
-          <textarea name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-        <input class="contest-form__button btn" type="submit" value="Отправить форму">
-        <p class="contest-form__note">* — обязательные поля</p>
       </form>
     </main>
+    </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
-      <div class="social">
-        <a class="social__link social__link--twitter"></a>
-        <a class="social__link social__link--facebook"></a>
-        <a class="social__link social__link--play"></a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <div class="social">
+          <a class="social__link social__link--twitter"></a>
+          <a class="social__link social__link--facebook"></a>
+          <a class="social__link social__link--play"></a>
+        </div>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
       </div>
-      <a class="social__copyright" href="https://htmlacademy.ru/">Разработано</a>
     </footer>
     <div class="popup popup--success">
       <p class="popup__title">Что-то пошло не так</p>

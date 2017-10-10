@@ -1,4 +1,18 @@
 .personal-achievements {
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet) {
+  .personal-achievements {
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop) {
+  .personal-achievements {
+    width: 100%;
+  }
 }

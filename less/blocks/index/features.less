@@ -1,5 +1,6 @@
 .features {
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .features__wrapper {
@@ -14,7 +15,6 @@
 
 .features__list {
   min-height: 786px;
-  background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 109%;
@@ -57,5 +57,18 @@
 
   .features__item {
     width: 350px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .features__list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 250px;
   }
 }
