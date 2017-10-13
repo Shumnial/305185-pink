@@ -1,10 +1,10 @@
 .gallery-item {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.gallery-item--panorama {
-  width: 320px;
-  margin: 0 auto;
+.gallery-item--panorama img {
 }
 
 .gallery-item--panorama > .gallery-item__descr {
@@ -37,28 +37,13 @@
   }
 
   .gallery-item--panorama {
-    width: 660px;
-    margin: 0 auto;
+    width: 100%;
   }
-
-  .gallery-item--panorama img {
-    width: 660px;
-    height: 550px;
-  }
-
+  
   .gallery-item--panorama > .gallery-item__descr {
     width: 620px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop) {
-  .gallery-item--panorama {
-    width: 1200px;
-  }
-
-  .gallery-item--panorama img {
-    width: 1200px;
-    height: 510px;
-  }
 }

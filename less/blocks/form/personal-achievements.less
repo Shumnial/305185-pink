@@ -1,8 +1,19 @@
 .personal-achievements {
+  position: relative;
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+
+.personal-achievements::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100%;
+  background-color: red;
+  z-index: -1;
+  left: calc(-50vw + 50%);
 }
 
 @media (min-width: @tablet) {
