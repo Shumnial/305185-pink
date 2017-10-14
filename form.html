@@ -53,10 +53,14 @@
             <label for="destroyed-hotel">Разгромил отель</label>
           </div>
           <div class="contacts-data">
-            <label for="telephone" class="contest-form__field-name">Номер телефона</label>
-            <input class="contest-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-            <label for="email" class="contest-form__field-name">Адрес почты</label>
-            <input class="contest-form__field" type="email" name="email" id="email" placeholder="Введите почту &#42;">
+            <div class="contacts-data__item">
+              <label for="telephone" class="contest-form__field-name">Номер телефона</label>
+              <input class="contest-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="contacts-data__item">
+              <label for="email" class="contest-form__field-name">Адрес почты</label>
+              <input class="contest-form__field" type="email" name="email" id="email" placeholder="Введите почту &#42;">
+            </div>
           </div>
           <div class="app-question">
             <h3 class="contest-form__subtitle">С каким приложением путешествовали?</h3>
@@ -69,7 +73,7 @@
           </div>
           <div class="emotions-descr">
             <h3 class="contest-form__subtitle">Опишите свои эмоции</h3>
-            <textarea name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="emotions-descr__field" name="emotions-descr__field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <input class="contest-form__button btn" type="submit" value="Отправить форму">
           <p class="contest-form__note">* — обязательные поля</p>

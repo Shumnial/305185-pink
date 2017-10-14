@@ -7,12 +7,18 @@
   .contacts-data {
     order: 3;
   }
+
+  .contacts-data__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (min-width: @desktop) {
   .contacts-data {
     width: 100%;
     flex-direction: row;
+    justify-content: space-between;
     padding: 40px 60px;
     box-sizing: border-box;
   }
