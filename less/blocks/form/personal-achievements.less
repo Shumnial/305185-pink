@@ -1,29 +1,30 @@
 .personal-achievements {
   position: relative;
   font-size: 18px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
-.personal-achievements::after {
+.personal-achievements::before {
   position: absolute;
   content: "";
   width: 100vw;
   height: 100%;
-  background-color: red;
+  background-color: #f2f2f2;
   z-index: -1;
-  left: calc(-50vw + 50%);
+  left: ~"calc(-50vw + 50%)";
 }
 
 @media (min-width: @tablet) {
   .personal-achievements {
     order: 4;
   }
+
+  .personal-achievements::before {
+    background-color: white;
+  }
 }
 
 @media (min-width: @desktop) {
-  .personal-achievements {
-    width: 100%;
-  }
 }

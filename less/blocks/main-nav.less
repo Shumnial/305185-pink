@@ -1,6 +1,6 @@
 .main-nav {
-  display: none;
   background-color: #283645;
+  width: 100%;
 }
 
 .main-nav__wrapper {
@@ -15,8 +15,45 @@
   text-align: center;
 }
 
+.main-nav__item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
 .main-nav__item a {
   font-size: 18px;
   font-weight: 700;
   color: white;
+}
+
+@media (min-width: @tablet) {
+  .main-nav__list {
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__list {
+    min-height: 110px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    text-transform: none;
+  }
+
+  .main-nav__item {
+    border: 0;
+  }
+
+  .main-nav__item a {
+    font-weight: 400;
+  }
 }

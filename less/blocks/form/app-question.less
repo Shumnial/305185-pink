@@ -1,12 +1,27 @@
 .app-question {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.app-question::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100%;
+  left: ~"calc(-50vw + 50%)";
+  z-index: -1;
   background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet) {
   .app-question {
     order: 2;
+  }
+
+  .app-question::before {
+    background-color: white;
   }
 }
 

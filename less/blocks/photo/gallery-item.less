@@ -1,16 +1,12 @@
+.gallery-item__wrapper {
+  .container();
+  background-color: #f2f2f2;
+}
+
 .gallery-item {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-}
-
-.gallery-item--panorama > .gallery-item__descr {
-  width: 280px;
-  margin: 0 auto;
-}
-
-.gallery-item__descr {
-  background-color: #f2f2f2;
 }
 
 .gallery-item__author {
@@ -35,9 +31,10 @@
 
   .gallery-item--panorama {
     width: 100%;
+    height: auto;
   }
 
   .gallery-item--panorama > .gallery-item__descr {
-    width: 620px;
+    width: 100%;
   }
 }
