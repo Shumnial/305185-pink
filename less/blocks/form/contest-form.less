@@ -7,8 +7,10 @@
 .contest-form__title {
   font-size: 24px;
   font-weight: 300;
-  min-height: 237px;
   color: white;
+  width: 320px;
+  min-height: 237px;
+  margin: 0 auto;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -55,6 +57,10 @@
 }
 
 @media (min-width: @tablet) {
+  .contest-form__title {
+    width: 660px;
+  }
+  
   .contest-form__field {
     width: 525px;
   }
@@ -74,6 +80,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  
+  .contest-form__title {
+    width: 960px;
   }
 
   .contest-form__field {
