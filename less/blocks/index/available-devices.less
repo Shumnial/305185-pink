@@ -1,11 +1,24 @@
 .available-devices {
-  min-height: 667px;
-  width: 320px;
+  text-align: center;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 46.2%, 42% 0%;
+  background-position: 90% 46.2%, 50% 0%;
   background-color: #1d2631;
-  text-align: center;
+}
+
+.available-devices__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 667px;
+}
+
+.available-devices__title {
+  display: none;
+  font-weight: 400;
+  width: 200px;
+  color: white;
 }
 
 .available-devices__text {
@@ -13,4 +26,30 @@
   line-height: 24px;
   font-weight: 300;
   color: white;
+}
+
+@media (min-width: @tablet) {
+  .available-devices__wrapper {
+    min-height: 619px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .available-devices__title {
+    display: block;
+    font-size: 40px;
+    margin-right: auto;
+  }
+
+  .available-devices__button {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .available-devices__text {
+    font-size: 14px;
+    width: 300px;
+    margin-right: auto;
+  }
 }

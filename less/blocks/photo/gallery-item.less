@@ -1,4 +1,40 @@
-.gallery-item {
+.gallery-item__wrapper {
+  .container();
   background-color: #f2f2f2;
+}
+
+.gallery-item {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item__author {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gallery-item__text {
+  font-size: 14px;
+}
+
+.gallery-item__likes {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .gallery-item {
+    width: 300px;
+  }
+
+  .gallery-item--panorama {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-item--panorama > .gallery-item__descr {
+    width: 100%;
+  }
 }

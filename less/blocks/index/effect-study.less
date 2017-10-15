@@ -1,0 +1,41 @@
+.effect-study {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .effect-study {
+    display: block;
+  }
+
+  .effect-study__wrapper {
+    .container();
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 440px;
+  }
+
+  .effect-study__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+  }
+
+  .effect-study__descr {
+    font-size: 14px;
+    line-height: 24px;
+    width: 300px;
+  }
+
+  .effect-study__link {
+    font-size: 14px;
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop) {
+  .effect-study {
+    background-color: #f2f2f2;
+  }
+}

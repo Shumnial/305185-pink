@@ -1,3 +1,21 @@
 .fullname-data {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet) {
+  .fullname-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 400px;
+    align-items: flex-start;
+    justify-content: space-between;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop) {
+  .fullname-data {
+    width: 50%;
+  }
 }
