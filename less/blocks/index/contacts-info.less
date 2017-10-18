@@ -1,10 +1,26 @@
+.contacts-info {
+  margin-bottom: 26px;
+}
+
 .contacts-info__title {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 4px;
 }
 
 .contacts-info__data {
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
+  margin-top: 0;
+}
+
+@media (min-width: @desktop) {
+  .contacts-info--order {
+    order: 1;
+  }
+  
+  .contacts-info__data--width {
+    width: 230px;
+  }
 }

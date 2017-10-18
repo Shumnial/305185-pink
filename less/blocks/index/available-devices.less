@@ -10,15 +10,16 @@
   .container();
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   min-height: 667px;
 }
 
 .available-devices__title {
   display: none;
-  font-weight: 400;
-  width: 200px;
-  color: white;
+}
+
+.available-devices__button {
+  width: 275px;
+  height: 19px;
 }
 
 .available-devices__text {
@@ -26,30 +27,56 @@
   line-height: 24px;
   font-weight: 300;
   color: white;
+  margin-bottom: 12px;
 }
 
 @media (min-width: @tablet) {
   .available-devices__wrapper {
     min-height: 619px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .available-devices__title {
     display: block;
     font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: white;
+    width: 200px;
+    margin-top: 92px;
+    margin-left: 50px;
     margin-right: auto;
   }
 
   .available-devices__button {
+    width: 294px;
+    height: 21px;
     margin: 0;
+    margin-top: 4px;
     margin-right: auto;
   }
 
   .available-devices__text {
-    font-size: 14px;
+    font-size: 18px;
     width: 300px;
     margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .available-devices {
+    min-height: 742px;
+  }
+  
+  .available-devices__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 250px;
+    margin-top: 108px;
+    margin-left: 25px;
+  }
+  
+  .available-devices__button {
+    font-size: 21px;
+    margin-top: 18px;
   }
 }
