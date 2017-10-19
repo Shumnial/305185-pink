@@ -1,9 +1,9 @@
 .gallery__wrapper {
   .container();
+  flex-wrap: wrap;
 }
 
 .gallery__title {
-  .container();
   text-align: center;
   min-height: 237px;
   font-size: 24px;
@@ -18,15 +18,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.gallery__subtitle--align {
-  .container();
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet) {
@@ -43,6 +35,5 @@
   .gallery__subtitle {
     font-size: 18px;
     line-height: 30px;
-    min-height: 220px;
   }
 }

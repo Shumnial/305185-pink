@@ -1,12 +1,25 @@
+.personal-achievements input {
+  display: none;
+}
+
 .personal-achievements {
   position: relative;
   font-size: 18px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 604px;
 }
 
-.personal-achievements::before {
+.personal-achievements .contest-form__subtitle {
+  text-align: center;
+  margin-bottom: 49px;
+  padding: 0 15px;
+  margin-top: 38px;
+  box-sizing: border-box;
+}
+
+.personal-achievements::after {
   position: absolute;
   content: "";
   width: 100vw;
@@ -16,12 +29,48 @@
   left: ~"calc(-50vw + 50%)";
 }
 
+.personal-achievements label {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 62px;
+  padding-left: 69px;
+}
+
+.personal-achievements label:last-child {
+  margin-bottom: 0;
+}
+
+.personal-achievements label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: -10px;
+  left: 0;
+  border: 2px #e5e5e5 solid;
+  background-color: white;
+}
+
+.personal-achievements input:checked + label::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 20px;
+  top: -5px;
+  left: 15px;
+  border-bottom: 2px solid #d22856;
+  border-right: 2px solid #d22856;
+  transform: rotate(45deg);
+}
+
 @media (min-width: @tablet) {
   .personal-achievements {
     order: 4;
   }
 
-  .personal-achievements::before {
+  .personal-achievements::after {
     display: none;
   }
 }
