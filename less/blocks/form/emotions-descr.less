@@ -1,4 +1,5 @@
 .emotions-descr {
+  position: relative;
   background-color: white;
   margin-bottom: 47px;
 }
@@ -26,11 +27,23 @@
   .emotions-descr {
     order: 4;
     text-align: center;
+    min-height: 290px;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 44px;
+  }
+
+  .emotions-descr .contest-form__subtitle {
+    position: absolute;
+    top: -45px;
+    left: 218px;
+    background-color: white;
   }
 
   .emotions-descr__field {
     width: 500px;
-    text-align: center;
+    height: 195px;
+    text-align: left;
   }
 }
 

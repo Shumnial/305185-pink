@@ -22,6 +22,12 @@
 @media (min-width: @tablet) {
   .contacts-data {
     order: 3;
+    min-height: 308px;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 24px;
+    margin-bottom: 67px;
+    box-sizing: border-box;
   }
 
   .contacts-data .contest-form__subtitle {
@@ -36,6 +42,17 @@
   .contacts-data__item {
     display: flex;
     flex-direction: column-reverse;
+    box-sizing: border-box;
+  }
+
+  .contacts-data__item input {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+  }
+
+  .contacts-data__item label {
+    margin-left: 80px;
   }
 }
 

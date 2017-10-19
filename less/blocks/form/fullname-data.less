@@ -1,7 +1,7 @@
 .fullname-data {
   display: flex;
   flex-direction: column;
-  padding-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .fullname-data input {
@@ -12,10 +12,24 @@
   .fullname-data {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 400px;
-    align-items: flex-start;
+    min-height: 330px;
+    align-content: flex-start;
     justify-content: space-between;
     order: 1;
+  }
+
+  .fullname-data label {
+    margin-top: 25px;
+  }
+
+  .fullname-data input {
+    margin-top: 0;
+    height: 63px;
+    margin-bottom: 52px;
+  }
+
+  .fullname-data input:last-child {
+    margin-bottom: 0;
   }
 }
 
