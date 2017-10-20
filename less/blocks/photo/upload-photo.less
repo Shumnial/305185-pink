@@ -9,13 +9,39 @@
 }
 
 .upload-photo__button {
-  color: #d22856;
-  border: 2px solid #d22856;
   height: 55px;
 }
 
 .upload-photo__button--post {
   margin-bottom: 10px;
+  color: #d22856;
+  border: 2px solid #d22856;
+
+  &:hover {
+    color: white;
+    background-color: #d22856;
+  }
+  &:active {
+    color: #e08195;
+  }
+}
+
+.upload-photo__button--cancel {
+  color: #e3e4e4;
+  border: 2px solid #dddfe0;
+  background-color: #f2f2f2;
+
+  &:hover {
+    color: #283645;
+    opacity: 0.3;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cdd0d3;
+    opacity: 1.0;
+    background-color: #b5b9be;
+  }
 }
 
 @media (min-width: @tablet) {
