@@ -1,5 +1,6 @@
 .contest-form__wrapper {
   .container();
+  position: relative;
 }
 
 .contest-form input::placeholder,
@@ -113,10 +114,14 @@
   .contest-form__button {
     margin-left: 0;
     order: 5;
+    width: 300px;
   }
 
   .contest-form__note {
     order: 6;
+    position: absolute;
+    right: 18px;
+    bottom: 50px;
   }
 }
 
@@ -131,6 +136,10 @@
     width: 960px;
   }
 
+  .contest-form__descr {
+    margin-bottom: 33px;
+  }
+
   .contest-form__descr--add {
     display: inline-block;
     padding: 0;
@@ -138,10 +147,6 @@
 
   .contest-form__field {
     width: 360px;
-  }
-
-  .contest-form__button {
-    width: 300px;
   }
 
   .contest-form__note {
