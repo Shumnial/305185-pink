@@ -11,6 +11,7 @@
 .upload-photo__button {
   color: #d22856;
   border: 2px solid #d22856;
+  height: 55px;
 }
 
 .upload-photo__button--post {
@@ -33,8 +34,15 @@
   }
 
   .upload-photo__button {
-    height: 55px;
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .upload-photo__edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .upload-photo__button--post {
@@ -44,13 +52,5 @@
 
   .upload-photo__button--cancel {
     width: 180px;
-  }
-}
-
-@media (min-width: @desktop) {
-  .upload-photo__edit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
