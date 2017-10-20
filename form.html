@@ -26,8 +26,7 @@
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="contest-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <div class="contest-form__wrapper">
-          <p class="contest-form__descr">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <p class="contest-form__descr contest-form__descr--add">Пожалуйста, заполните форму ниже:</p>
+          <p class="contest-form__descr">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest-form__descr contest-form__descr--add">Пожалуйста, заполните форму ниже:</span></p>
           <div class="fullname-data">
             <label for="last-name" class="contest-form__field-name">Фамилия:</label>
             <input class="contest-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию &#42;" required>
@@ -39,17 +38,17 @@
           <div class="personal-achievements">
             <h3 class="contest-form__subtitle">Ваши безбашенные достижения в путешествии</h3>
             <input type="checkbox" name="achievement" id="shark-selfie" value="shark-selfie" checked>
-            <label for="shark-selfie">Сделал селфи с акулой</label>
+            <label class="personal-achievements__shark" for="shark-selfie">Сделал селфи с акулой</label>
             <input type="checkbox" name="achievement" id="burned" value="burned" checked>
-            <label for="burned">Обгорел на пляже</label>
+            <label class="personal-achievements__burned" for="burned">Обгорел на пляже</label>
             <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
-            <label for="chuck-norris">Видел Чака Норриса</label>
+            <label class="personal-achievements__chuck"for="chuck-norris">Видел Чака Норриса</label>
             <input type="checkbox" name="achievement" id="souvenirs" value="souvenirs">
-            <label for="souvenirs">Накупил сувениров</label>
+            <label class="personal-achievements__souvenirs" for="souvenirs">Накупил сувениров</label>
             <input type="checkbox" name="achievement" id="held-tower" value="held-tower" checked>
-            <label for="held-tower">Удержал башню</label>
+            <label class="personal-achievements__tower" for="held-tower">Удержал башню</label>
             <input type="checkbox" name="achievement" id="destroyed-hotel" value="destroyed-hotel">
-            <label for="destroyed-hotel">Разгромил отель</label>
+            <label class="personal-achievements__hotel" for="destroyed-hotel">Разгромил отель</label>
           </div>
           <div class="contacts-data">
             <h3 class="contest-form__subtitle">Контактная информация</h3>

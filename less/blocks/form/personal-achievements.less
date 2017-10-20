@@ -90,3 +90,41 @@
     display: none;
   }
 }
+
+@media (min-width: @desktop) {
+  .personal-achievements {
+    min-height: 230px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .personal-achievements .contest-form__subtitle {
+    left: 268px;
+  }
+
+  .personal-achievements__shark {
+    order: 1;
+  }
+
+  .personal-achievements__burned {
+    order: 4;
+  }
+
+  .personal-achievements__chuck {
+    order: 2;
+  }
+
+  .personal-achievements__souvenirs {
+    order: 5;
+  }
+
+  .personal-achievements__tower {
+    order: 3;
+  }
+
+  .personal-achievements__hotel {
+    order: 6;
+  }
+
+}

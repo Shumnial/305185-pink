@@ -10,6 +10,7 @@
   .container();
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   min-height: 667px;
 }
 
@@ -19,7 +20,8 @@
 
 .available-devices__button {
   width: 275px;
-  height: 19px;
+  height: 21px;
+  padding: 14px 0;
 }
 
 .available-devices__text {
@@ -33,6 +35,7 @@
 @media (min-width: @tablet) {
   .available-devices__wrapper {
     min-height: 619px;
+    justify-content: flex-start;
   }
 
   .available-devices__title {
