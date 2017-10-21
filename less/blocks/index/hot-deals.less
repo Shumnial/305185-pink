@@ -19,7 +19,7 @@
   font-weight: 700;
   color: white;
   width: 280px;
-  height: 100px;
+  height: 96px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
   background-color: #283645;
@@ -34,16 +34,17 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 10px;
+  height: 58px;
+  padding: 0;
+  padding-left: 20px;
   border: 2px solid #e5e5e5;
   background-color: white;
 }
 
-.hot-deals__advantage:nth-child(1) {
+.hot-deals__advantage--hidden {
   border: 0;
   font-size: 0;
   background-color: #f2f2f2;
-  padding: 0;
 }
 
 .hot-deals__thumbs {
@@ -68,19 +69,24 @@
   }
 
   .hot-deals table {
-    width: 621px;
     transform: none;
     margin-top: 35px;
+    width: 100%;
   }
 
   .hot-deals__name {
     width: 150px;
-    height: 76px;
+    height: 77px;
+    border-radius: 6px;
+  }
+  
+  .hot-deals__advantage {
+    height: 45px;
   }
 
-  .hot-deals__advantage:nth-child(1) {
+  .hot-deals__advantage--hidden {
     font-size: 14px;
-    padding: 14px;
+    padding-left: 15px;
     border: 2px solid #e5e5e5;
     background-color: white;
     text-transform: none;
@@ -99,7 +105,21 @@
 
 @media (min-width: @desktop) {
   .hot-deals table {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .hot-deals__name {
+    height: 95px;
+  }
+  
+  .hot-deals__advantage {
+    height: 58px;
+    font-size: 18px;
+  }
+  
+  .hot-deals__advantage--hidden {
+    padding-left: 21px;
   }
 }

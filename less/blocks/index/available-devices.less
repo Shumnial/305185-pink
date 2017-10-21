@@ -23,6 +23,7 @@
   width: 275px;
   height: 21px;
   padding: 14px 0;
+  margin-bottom: 27px;
 
   &:hover {
     color: #d22856;
@@ -34,12 +35,40 @@
   }
 }
 
+.available-devices__list {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.available-devices__item {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.available-devices__item--ios {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.available-devices__item--android {
+  background-image: url("../img/logo-android.svg");
+}
+
+.available-devices__item--wphone {
+  background-image: url("../img/logo-microsoft.svg");
+}
+
 .available-devices__text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: white;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: @tablet) {
@@ -67,9 +96,15 @@
   .available-devices__button {
     width: 294px;
     height: 21px;
-    margin: 0;
     margin-top: 4px;
+    margin-left: 0;
+    margin-bottom: 40px;
     margin-right: auto;
+  }
+  
+  .available-devices__list {
+    margin-left: 40px;
+    margin-bottom: 20px;
   }
 
   .available-devices__text {
@@ -96,5 +131,10 @@
   .available-devices__button {
     font-size: 21px;
     margin-top: 18px;
+    margin-bottom: 62px;
+  }
+  
+  .available-devices__list {
+    margin-bottom: 38px;
   }
 }
