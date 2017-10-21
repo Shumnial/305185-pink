@@ -2,9 +2,13 @@
   background-color: #f2f2f2;
 }
 
+.upload-photo img {
+  margin-bottom: 37px;
+}
+
 .upload-photo__wrapper {
   .container();
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -15,7 +19,7 @@
 .upload-photo__button--post {
   margin-bottom: 10px;
   color: #d22856;
-  border: 2px solid #d22856;
+  border: 3px solid #d22856;
 
   &:hover {
     color: white;
@@ -29,7 +33,7 @@
 
 .upload-photo__button--cancel {
   color: #e3e4e4;
-  border: 2px solid #dddfe0;
+  border: 3px solid #dddfe0;
   background-color: #f2f2f2;
 
   &:hover {
@@ -45,6 +49,31 @@
   }
 }
 
+.upload-photo__filter-level {
+  position: absolute;
+  top: 85px;
+  left: -14px;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+  margin: 0 auto;
+}
+
+.upload-photo__filter-level--hidden {
+  display: none;
+}
+
+.upload-photo__pin {
+  position: absolute;
+  top: -5px;
+  right: 35px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
+
 @media (min-width: @tablet) {
   .upload-photo__wrapper {
     display: flex;
@@ -58,10 +87,28 @@
 
   .upload-photo__edit {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .upload-photo__button {
     margin: 0;
+  }
+  
+  .upload-photo__filter-level {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  
+  .upload-photo__filter-level--hidden {
+    display: block;
+  }
+  
+  .effect-filters__item {
+    display: flex;
+    align-items: baseline;
   }
 }
 

@@ -107,11 +107,23 @@
           <img src="img/photo-road-mobile@1x.jpg" alt="Текущее фото">
           <div class="upload-photo__edit">
             <div class="effect-filters">
-              <button type="button">Обрезка</button>
-              <button type="button">Заливка</button>
-              <button type="button">Контраст</button>
-              <div class="effect-filters__level">
-                <div class="effect-filters__pin"></div>
+              <div class="effect-filters__item">
+                <button class="effect-filters__crop" type="button">Обрезка</button>
+                <div class="upload-photo__filter-level">
+                  <div class="upload-photo__pin"></div>
+                </div>
+              </div>
+              <div class="effect-filters__item">
+                <button class="effect-filters__fill" type="button">Заливка</button>
+                <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
+                  <div class="upload-photo__pin"></div>
+                </div>
+              </div>
+              <div class="effect-filters__item">
+                <button class="effect-filters__contrast" type="button">Контраст</button>
+                <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
+                  <div class="upload-photo__pin"></div>
+                </div>
               </div>
             </div>
             <div class="upload-photo__buttons">
