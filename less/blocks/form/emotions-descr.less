@@ -1,34 +1,68 @@
 .emotions-descr {
+  position: relative;
   background-color: white;
+  margin-bottom: 47px;
+}
+
+.emotions-descr .contest-form__subtitle {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .emotions-descr__field {
   width: 100%;
   height: 200px;
-  padding: 0 20px;
-  padding-top: 25px;
+  padding: 0 19px;
+  padding-top: 17px;
+  border: 2px solid #e5e5e5;
   box-sizing: border-box;
+}
+
+.emotions-descr__field::placeholder {
+  line-height: 30px;
 }
 
 @media (min-width: @tablet) {
   .emotions-descr {
     order: 4;
     text-align: center;
+    min-height: 290px;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 44px;
+    margin-bottom: 70px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .emotions-descr .contest-form__subtitle {
+    position: absolute;
+    top: -45px;
+    left: 176px;
+    padding: 0 40px;
+    background-color: white;
   }
 
   .emotions-descr__field {
     width: 500px;
-    text-align: center;
+    height: 195px;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop) {
   .emotions-descr {
     width: 100%;
+    min-height: 215px;
+    margin-bottom: 65px;
+  }
+
+  .emotions-descr .contest-form__subtitle {
+    left: 335px;
   }
 
   .emotions-descr__field {
-    width: 820px;
+    width: 818px;
     height: 125px;
     text-align: left;
   }

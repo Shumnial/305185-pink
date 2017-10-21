@@ -9,12 +9,12 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="top-menu">
-          <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+          <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink"></a>
           <button type="button" class="top-menu__toggle">Меню</button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -27,17 +27,17 @@
         <div class="available-devices__wrapper">
           <h1 class="available-devices__title">Взгляните на жизнь иначе!</h1>
           <a class="available-devices__button btn" href="#">Скачать приложение</a>
-          <p class="available-devices__images">
-            <a class="available-devices__image available-devices__image--ios" href="#"></a>
-            <a class="available-devices__image available-devices__image--android" href="#"></a>
-            <a class="available-devices__image available-devices__image--wphone" href="#"></a>
-          </p>
+          <div class="available-devices__list">
+            <a class="available-devices__item available-devices__item--ios" href="#"></a>
+            <a class="available-devices__item available-devices__item--android" href="#"></a>
+            <a class="available-devices__item available-devices__item--wphone" href="#"></a>
+          </div>
           <p class="available-devices__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
       <section class="features">
         <div class="features__wrapper">
-          <h2 class="features__title features__title">Устали от серости мегаполиса?</h2>
+          <h2 class="features__title">Устали от серости мегаполиса?</h2>
           <h2 class="features__title features__title--narrow">Нам есть, что вам предложить!</h2>
           <div class="features__list">
             <div class="features__item">
@@ -58,7 +58,7 @@
       <article class="effect-study">
         <div class="effect-study__wrapper">
           <h3 class="effect-study__title">Эффект на 24 часа!</h3>
-          <p class="effect-study__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки
+          <p class="effect-study__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
           </p>
           <a href="#" class="effect-study__link">Узнать больше об исследовании</a>
         </div>
@@ -78,23 +78,28 @@
         </div>
       </section>
       <section class="hot-deals">
+        <div class="hot-deals__wrapper">
         <table>
           <tr class="hot-deals__titles">
+            <th class="hot-deals__name"></th>
             <th class="hot-deals__name">База 1,99 USD</th>
             <th class="hot-deals__name">Стандарт 3,99 USD</th>
             <th class="hot-deals__name">Анлим 9,99 USD</th>
           </tr>
           <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage hot-deals__advantage--hidden">Розовый фильтр</td>
             <td class="hot-deals__advantage">Розовый фильтр</td>
             <td class="hot-deals__advantage">Розовый фильтр</td>
             <td class="hot-deals__advantage">Розовый фильтр</td>
           </tr>
           <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage hot-deals__advantage--hidden">Смайлики</td>
             <td class="hot-deals__advantage">Смайлики</td>
             <td class="hot-deals__advantage">Смайлики</td>
             <td class="hot-deals__advantage">Смайлики</td>
           </tr>
           <tr class="hot-deals__advantages">
+            <td class="hot-deals__advantage hot-deals__advantage--hidden">Комментарии</td>
             <td class="hot-deals__advantage">Комментарии</td>
             <td class="hot-deals__advantage">Комментарии</td>
             <td class="hot-deals__advantage">Комментарии</td>
@@ -105,21 +110,22 @@
           <button type="button" class="hot-deals__thumb"></button>
           <button type="button" class="hot-deals__thumb"></button>
         </div>
+          </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
           <div class="contacts-info">
             <p class="contacts-info__title">Звоните:</p>
-            <a class="contacts-info__data" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+            <a class="contacts-info__data" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts-info contacts-info--order">
+          <div class="contacts-info contacts-info--change-mobile-order">
             <p class="contacts-info__title">Пишите:</p>
             <a class="contacts-info__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts-info">
             <p class="contacts-info__title">Приезжайте в гости:</p>
-            <p class="contacts-info__data">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts-info__data contacts-info__data--no-hover">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
       </section>
@@ -133,7 +139,7 @@
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>
-          <a class="social__link social__link--play"></a>
+          <a class="social__link social__link--youtube"></a>
         </div>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
       </div>

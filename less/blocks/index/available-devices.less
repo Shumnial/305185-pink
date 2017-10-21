@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 90% 46.2%, 50% 0%;
   background-color: #1d2631;
+  margin-bottom: 20px;
 }
 
 .available-devices__wrapper {
@@ -16,9 +17,50 @@
 
 .available-devices__title {
   display: none;
-  font-weight: 400;
-  width: 200px;
-  color: white;
+}
+
+.available-devices__button {
+  width: 275px;
+  height: 21px;
+  padding: 14px 0;
+  margin-bottom: 27px;
+
+  &:hover {
+    color: #d22856;
+    background-color: white;
+  }
+
+  &:active {
+    color: #f2ced5;
+  }
+}
+
+.available-devices__list {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.available-devices__item {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.available-devices__item--ios {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.available-devices__item--android {
+  background-image: url("../img/logo-android.svg");
+}
+
+.available-devices__item--wphone {
+  background-image: url("../img/logo-microsoft.svg");
 }
 
 .available-devices__text {
@@ -26,30 +68,73 @@
   line-height: 24px;
   font-weight: 300;
   color: white;
+  margin-bottom: 30px;
 }
 
 @media (min-width: @tablet) {
+  .available-devices {
+    margin-bottom: 25px;
+  }
+
   .available-devices__wrapper {
     min-height: 619px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .available-devices__title {
     display: block;
     font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: white;
+    width: 200px;
+    margin-top: 92px;
+    margin-left: 50px;
     margin-right: auto;
   }
 
   .available-devices__button {
-    margin: 0;
+    width: 294px;
+    height: 21px;
+    margin-top: 4px;
+    margin-left: 0;
+    margin-bottom: 40px;
     margin-right: auto;
   }
 
+  .available-devices__list {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
   .available-devices__text {
-    font-size: 14px;
+    font-size: 18px;
     width: 300px;
     margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .available-devices {
+    min-height: 742px;
+    margin-bottom: 41px;
+  }
+
+  .available-devices__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 250px;
+    margin-top: 108px;
+    margin-left: 25px;
+  }
+
+  .available-devices__button {
+    font-size: 21px;
+    margin-top: 18px;
+    margin-bottom: 62px;
+  }
+
+  .available-devices__list {
+    margin-bottom: 38px;
   }
 }

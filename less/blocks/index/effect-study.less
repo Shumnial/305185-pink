@@ -12,30 +12,61 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    min-height: 440px;
+    min-height: 365px;
   }
 
   .effect-study__title {
     font-size: 30px;
     font-weight: 700;
     color: black;
+    width: 170px;
+    margin-right: 140px;
+    margin-top: 45px;
+    margin-bottom: 0;
   }
 
   .effect-study__descr {
     font-size: 14px;
     line-height: 24px;
     width: 300px;
+    margin-right: 10px;
   }
 
   .effect-study__link {
     font-size: 14px;
     color: #d22856;
     text-decoration: underline;
+    margin-right: 85px;
   }
 }
 
 @media (min-width: @desktop) {
   .effect-study {
     background-color: #f2f2f2;
+  }
+
+  .effect-study__wrapper {
+    min-height: 463px;
+    justify-content: flex-end;
+  }
+
+  .effect-study__title {
+    width: 300px;
+    margin-right: 274px;
+  }
+
+  .effect-study__descr {
+    font-size: 18px;
+    line-height: 30px;
+    width: 520px;
+    margin-right: 54px;
+    margin-top: 21px;
+  }
+
+  .effect-study__link {
+    font-size: 18px;
+    margin-right: 285px;
+    margin-top: 18px;
+    margin-bottom: 20px;
   }
 }

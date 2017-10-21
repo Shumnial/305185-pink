@@ -2,9 +2,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 }
 
-.app-question::before {
+.app-question .contest-form__subtitle {
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 44px;
+}
+
+.app-question::after {
   position: absolute;
   content: "";
   display: block;
@@ -15,18 +22,97 @@
   background-color: #f2f2f2;
 }
 
+.app-question input {
+  display: none;
+}
+
+.app-question label {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 55px;
+  padding-left: 69px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.app-question label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: -9px;
+  left: 0;
+  border: 2px #e5e5e5 solid;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.app-question input:checked + label::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: 12px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.app-question label:hover::before {
+  border-color: #283645;
+}
+
+.app-question label:active::before {
+  border-color: #d22856;
+}
+
 @media (min-width: @tablet) {
   .app-question {
     order: 2;
+    min-height: 295px;
+    padding-left: 59px;
+    padding-top: 59px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 40px;
   }
 
-  .app-question::before {
+  .app-question::after {
     display: none;
+  }
+
+  .app-question .contest-form__subtitle {
+    position: absolute;
+    top: -11px;
+    left: 123px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 0 25px;
+  }
+
+  .app-question label {
+    margin-bottom: 55px;
+    padding-left: 58px;
+  }
+
+  .app-question label:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop) {
   .app-question {
-    width: 50%;
+    width: 435px;
+    min-height: 300px;
+    padding-left: 75px;
+    padding-top: 62px;
+  }
+
+  .app-question .contest-form__subtitle {
+    top: -10px;
+    left: 31px;
   }
 }

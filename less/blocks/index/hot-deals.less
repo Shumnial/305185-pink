@@ -1,24 +1,49 @@
 .hot-deals {
   background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.hot-deals__wrapper {
+  .container();
 }
 
 .hot-deals table {
-  margin: 0 auto;
-}
-
-.hot-deals__titles {
-  background-color: #283645;
+  width: 840px;
+  transform: translateX(-365px);
+  border-collapse: collapse;
+  cursor: default;
 }
 
 .hot-deals__name {
   font-size: 18px;
   font-weight: 700;
   color: white;
+  width: 280px;
+  height: 96px;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  background-color: #283645;
+}
+
+.hot-deals__name:first-child {
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .hot-deals__advantage {
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
+  padding: 21px 0;
+  padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+}
+
+.hot-deals__advantage--hidden {
+  border: 0;
+  font-size: 0;
+  background-color: #f2f2f2;
 }
 
 .hot-deals__thumbs {
@@ -30,4 +55,70 @@
 
 .hot-deals__thumb {
   margin-right: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet) {
+  .hot-deals {
+    margin-bottom: 21px;
+  }
+
+  .hot-deals__wrapper {
+    min-height: 290px;
+  }
+
+  .hot-deals table {
+    transform: none;
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .hot-deals__name {
+    width: 150px;
+    height: 77px;
+    border-radius: 6px;
+  }
+
+  .hot-deals__advantage {
+    padding: 15px 0;
+  }
+
+  .hot-deals__advantage--hidden {
+    font-size: 14px;
+    padding-left: 15px;
+    border: 2px solid #e5e5e5;
+    background-color: white;
+    text-transform: none;
+  }
+
+  .hot-deals__advantage:nth-child(2),
+  .hot-deals__advantage:nth-child(3),
+  .hot-deals__advantage:nth-child(4) {
+    font-size: 0;
+  }
+
+  .hot-deals__thumbs {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .hot-deals table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hot-deals__name {
+    height: 95px;
+  }
+
+  .hot-deals__advantage {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+
+  .hot-deals__advantage--hidden {
+    padding-left: 21px;
+  }
 }

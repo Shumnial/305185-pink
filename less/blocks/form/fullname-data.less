@@ -1,21 +1,54 @@
 .fullname-data {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.fullname-data input {
+  border: 2px solid #e5e5e5;
 }
 
 @media (min-width: @tablet) {
   .fullname-data {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 400px;
-    align-items: flex-start;
+    min-height: 330px;
+    align-content: flex-start;
     justify-content: space-between;
     order: 1;
+  }
+
+  .fullname-data label {
+    margin-top: 25px;
+  }
+
+  .fullname-data input {
+    margin-top: 0;
+    height: 63px;
+    margin-bottom: 52px;
+  }
+
+  .fullname-data input:last-child {
+    margin-bottom: 0;
+  }
+
+  .fullname-data .contest-form__field--change-width {
+    width: 565px;
   }
 }
 
 @media (min-width: @desktop) {
   .fullname-data {
-    width: 50%;
+    width: 435px;
+    min-height: 295px;
+    padding-top: 6px;
+  }
+
+  .fullname-data .contest-form__field {
+    width: 340px;
+  }
+
+  .fullname-data .contest-form__field--change-width {
+    width: 380px;
   }
 }

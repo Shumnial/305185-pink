@@ -1,6 +1,33 @@
 .effect-filters {
+  position: relative;
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
   background-color: #f2f2f2;
-  margin: 20px auto;
+  margin-left: 33px;
+  margin-bottom: 110px;
+}
+
+.effect-filters button {
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.effect-filters__crop {
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.effect-filters__fill {
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.effect-filters__contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
 }
 
 @media (min-width: @tablet) {
