@@ -59,16 +59,31 @@
 }
 
 @media (min-width: @tablet) {
+  .hot-deals {
+    margin-bottom: 21px;
+  }
+
+  .hot-deals__wrapper {
+    min-height: 290px;
+  }
+
   .hot-deals table {
-    width: 620px;
+    width: 621px;
     transform: none;
+    margin-top: 35px;
+  }
+
+  .hot-deals__name {
+    width: 150px;
+    height: 76px;
   }
 
   .hot-deals__advantage:nth-child(1) {
     font-size: 14px;
-    padding: 10px;
+    padding: 14px;
     border: 2px solid #e5e5e5;
     background-color: white;
+    text-transform: none;
   }
 
   .hot-deals__advantage:nth-child(2),
@@ -77,8 +92,8 @@
     font-size: 0;
   }
 
-  .hot-deals__name {
-    width: 150px;
+  .hot-deals__thumbs {
+    display: none;
   }
 }
 
