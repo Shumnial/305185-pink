@@ -9,30 +9,71 @@
 
 .hot-deals table {
   width: 840px;
-  transform: translateX(-365px);
+  transform: translateX(-279px);
   border-collapse: collapse;
   cursor: default;
 }
 
-.hot-deals__name {
+.hot-deals__heading {
   font-size: 18px;
   font-weight: 700;
   color: white;
-  width: 280px;
   height: 96px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
   background-color: #283645;
 }
 
-.hot-deals__name:first-child {
+.hot-deals__heading:first-child {
   border: none;
   background-color: #f2f2f2;
 }
 
+.hot-deals__price,
+.hot-deals__name {
+  margin: 0;
+}
+
+.hot-deals__name {
+  margin-bottom: 5px;
+}
+
+.hot-deals__price {
+  font-weight: 300;
+}
+
+.hot-deals__heading--hit {
+  position: relative;
+}
+
+.hot-deals__heading--hit::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 70px;
+  height: 80px;
+  top: -7px;
+  left: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hot-deals__heading--hit::after {
+  position: absolute;
+  display: block;
+  content: "ХИТ";
+  top: 19px;
+  left: 7px;
+  font-size: 14px;
+  transform: rotate(-45deg);
+}
+
 .hot-deals__advantage {
+  position: relative;
   font-size: 14px;
   font-weight: 400;
+  width: 280px;
   text-transform: uppercase;
   padding: 21px 0;
   padding-left: 20px;
@@ -40,10 +81,37 @@
   background-color: white;
 }
 
-.hot-deals__advantage--hidden {
-  border: 0;
-  font-size: 0;
-  background-color: #f2f2f2;
+.hot-deals__advantage--check::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 13px;
+  right: 18px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.hot-deals__advantage--cross::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 26px;
+  height: 26px;
+  top: 15px;
+  right: 20px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+}
+
+.hot-deals__advantage--hidden,
+.hot-deals__heading--hidden {
+  display: none;
 }
 
 .hot-deals__thumbs {
@@ -70,25 +138,35 @@
   .hot-deals table {
     transform: none;
     margin-top: 35px;
-    width: 100%;
+    width: 620px;
   }
 
-  .hot-deals__name {
+  .hot-deals__heading {
+    font-size: 16px;
     width: 150px;
     height: 77px;
     border-radius: 6px;
   }
 
   .hot-deals__advantage {
-    padding: 15px 0;
+    padding: 13px 0;
+    width: auto;
+  }
+
+  .hot-deals__advantage--hidden,
+  .hot-deals__heading--hidden {
+    display: block;
   }
 
   .hot-deals__advantage--hidden {
-    font-size: 14px;
     padding-left: 15px;
-    border: 2px solid #e5e5e5;
-    background-color: white;
     text-transform: none;
+  }
+
+  .hot-deals__advantage--cross::before,
+  .hot-deals__advantage--check::before{
+    top: 10px;
+    left: 65px;
   }
 
   .hot-deals__advantage:nth-child(2),
@@ -100,6 +178,29 @@
   .hot-deals__thumbs {
     display: none;
   }
+
+  .hot-deals__heading--hit::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 70px;
+    height: 60px;
+    top: 0px;
+    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .hot-deals__heading--hit::after {
+    position: absolute;
+    display: block;
+    content: "ХИТ";
+    top: 12px;
+    left: 3px;
+    font-size: 14px;
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: @desktop) {
@@ -109,16 +210,47 @@
     margin-right: auto;
   }
 
-  .hot-deals__name {
+  .hot-deals__heading {
     height: 95px;
+    width: 230px;
   }
 
   .hot-deals__advantage {
     font-size: 18px;
-    padding: 20px 0;
+    padding: 19px 0;
+
   }
 
   .hot-deals__advantage--hidden {
     padding-left: 21px;
+  }
+
+  .hot-deals__advantage--cross::before,
+  .hot-deals__advantage--check::before {
+    top: 16px;
+    left: 101px;
+  }
+
+  .hot-deals__heading--hit::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 70px;
+    height: 80px;
+    top: -7px;
+    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .hot-deals__heading--hit::after {
+    position: absolute;
+    display: block;
+    content: "ХИТ";
+    top: 19px;
+    left: 7px;
+    font-size: 14px;
+    transform: rotate(-45deg);
   }
 }
