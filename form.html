@@ -9,7 +9,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="top-menu">
-          <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+          <a class="top-menu__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="top-menu__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </picture>
+          </a>
           <button type="button" class="top-menu__toggle">Меню</button>
         </div>
         <nav class="main-nav">
@@ -82,7 +88,12 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </a>
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>

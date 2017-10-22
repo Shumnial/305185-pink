@@ -13,21 +13,39 @@
 .page-footer__copyright {
   font-size: 14px;
   color: #283645;
-  padding-right: 20px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.page-footer__copyright img {
+  vertical-align: middle;
 }
 
 @media (min-width: @tablet) {
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin-right: 73px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 15px;
   }
 }
 
 @media (min-width: @desktop) {
   .page-footer__copyright {
     font-size: 18px;
+  }
+
+  .page-footer__logo {
+    margin-right: 235px;
+  }
+
+  .page-footer__copyright {
+    width: 155px;
   }
 }

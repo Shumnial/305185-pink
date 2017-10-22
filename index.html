@@ -40,15 +40,15 @@
           <h2 class="features__title">Устали от серости мегаполиса?</h2>
           <h2 class="features__title features__title--narrow">Нам есть, что вам предложить!</h2>
           <div class="features__list">
-            <div class="features__item">
+            <div class="features__item features__item--first">
               <h3 class="features__item-title">Поднимает настроение</h3>
               <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--second">
               <h3 class="features__item-title">Меняет мир вокруг</h3>
               <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--third">
               <h3 class="features__item-title">Заводит новых друзей</h3>
               <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
@@ -135,13 +135,21 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </a>
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>
           <a class="social__link social__link--youtube"></a>
         </div>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+          <p>Разработано</p>
+          <img src="img/logo-htmlacademy.svg" alt="Логотип Pink">
+        </a>
       </div>
     </footer>
   </body>
