@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,7 +10,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="top-menu">
-          <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="#" alt="Логотип Pink"></a>
+          <a class="top-menu__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="top-menu__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </picture>
+          </a>
           <button type="button" class="top-menu__toggle">Меню</button>
         </div>
         <nav class="main-nav">
@@ -28,7 +35,11 @@
         <div class="gallery__wrapper">
           <h2 class="gallery__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
           <div class="gallery-item gallery-item--panorama">
-            <img src="img/panorama-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+              <img class="gallery-item--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Анна (5 минут назад)</cite>
@@ -39,7 +50,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-car-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Левон (5 часов назад)</cite>
@@ -49,7 +64,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Антон (12 часов назад)</cite>
@@ -59,7 +78,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-window-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Борис (20 часов назад)</cite>
@@ -69,7 +92,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Сергей (25 часов назад)</cite>
@@ -79,7 +106,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Максим (40 часов назад)</cite>
@@ -89,7 +120,11 @@
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото">
+            </picture>
             <div class="gallery-item__descr">
               <blockquote>
                 <cite class="gallery-item__author">Надежда (45 часов назад)</cite>
@@ -104,25 +139,29 @@
       </section>
       <section class="upload-photo">
         <div class="upload-photo__wrapper">
-          <img src="img/photo-road-mobile@1x.jpg" alt="Текущее фото">
+          <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Текущее фото">
+            </picture>
           <div class="upload-photo__edit">
             <div class="effect-filters">
               <div class="effect-filters__item">
                 <button class="effect-filters__crop" type="button">Обрезка</button>
                 <div class="upload-photo__filter-level">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-crop-value"></div>
                 </div>
               </div>
               <div class="effect-filters__item">
                 <button class="effect-filters__fill" type="button">Заливка</button>
                 <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-fill-value"></div>
                 </div>
               </div>
               <div class="effect-filters__item">
                 <button class="effect-filters__contrast" type="button">Контраст</button>
                 <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-contrast-value"></div>
                 </div>
               </div>
             </div>
@@ -136,13 +175,21 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </a>
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>
           <a class="social__link social__link--youtube"></a>
         </div>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+          <p>Разработано</p>
+          <img src="img/logo-htmlacademy.svg" alt="Логотип Pink">
+        </a>
       </div>
     </footer>
   </body>

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,7 +10,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="top-menu">
-          <a class="top-menu__logo" href="index.html"><img class="top-menu__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink"></a>
+          <a class="top-menu__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="projects/pink/img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="top-menu__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </picture>
+          </a>
           <button type="button" class="top-menu__toggle">Меню</button>
         </div>
         <nav class="main-nav">
@@ -40,15 +47,15 @@
           <h2 class="features__title">Устали от серости мегаполиса?</h2>
           <h2 class="features__title features__title--narrow">Нам есть, что вам предложить!</h2>
           <div class="features__list">
-            <div class="features__item">
+            <div class="features__item features__item--first">
               <h3 class="features__item-title">Поднимает настроение</h3>
               <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--second">
               <h3 class="features__item-title">Меняет мир вокруг</h3>
               <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--third">
               <h3 class="features__item-title">Заводит новых друзей</h3>
               <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
@@ -68,12 +75,12 @@
           <blockquote class="reviews__item">
             <span class="reviews__author-info">25 лет, водитель трамвая</span>
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__item-text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
           </blockquote>
           <div class="reviews__thumbs">
-            <button type="button" class="reviews__thumb"></button>
-            <button type="button" class="reviews__thumb"></button>
-            <button type="button" class="reviews__thumb"></button>
+            <button class="reviews__thumb reviews__thumb--active reviews__thumb--arrow-left" type="button" class="reviews__thumb"></button>
+            <button class="reviews__thumb reviews__thumb--arrow-right" type="button" class="reviews__thumb"></button>
+            <button class="reviews__thumb reviews__thumb--hidden"type="button" class="reviews__thumb"></button>
           </div>
         </div>
       </section>
@@ -135,13 +142,21 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html"><img src="#" alt="Логотип Pink"></a>
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </a>
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>
           <a class="social__link social__link--youtube"></a>
         </div>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+          <p>Разработано</p>
+          <img src="img/logo-htmlacademy.svg" alt="Логотип Pink">
+        </a>
       </div>
     </footer>
   </body>

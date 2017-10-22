@@ -4,6 +4,7 @@
   min-height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .social__link {
@@ -37,4 +38,16 @@
   background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: @tablet) {
+  .social {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .social {
+    margin-top: 10px;
+  }
 }

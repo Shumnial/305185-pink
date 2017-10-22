@@ -8,7 +8,9 @@
   margin-bottom: 110px;
 }
 
-.effect-filters button {
+.effect-filters__crop,
+.effect-filters__fill,
+.effect-filters__contrast {
   font-size: 0;
   border: 0;
   width: 50px;
@@ -19,7 +21,7 @@
 }
 
 .effect-filters__crop {
-  background-image: url("../img/icon-editor-crop.svg");
+  background-image: url("../img/icon-editor-crop-active.svg");
 }
 
 .effect-filters__fill {
@@ -30,16 +32,108 @@
   background-image: url("../img/icon-editor-contrast.svg");
 }
 
+.effect-filters__crop:hover {
+  background-image: url("../img/icon-editor-crop-hover.svg");
+}
+
+.effect-filters__fill:hover {
+  background-image: url("../img/icon-editor-fill-hover.svg");
+}
+
+.effect-filters__contrast:hover {
+  background-image: url("../img/icon-editor-contrast-hover.svg");
+}
+
 @media (min-width: @tablet) {
   .effect-filters {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    width: 289px;
+    min-height: 183px;
+    margin-bottom: 0;
+  }
+
+  .effect-filters__item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .effect-filters__crop,
+  .effect-filters__fill,
+  .effect-filters__contrast {
+    height: 40px;
+  }
+
+  .effect-filters__crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
+
+  .effect-filters__fill {
+    background-image: url("../img/icon-editor-fill-active.svg");
+  }
+
+  .effect-filters__contrast {
+    background-image: url("../img/icon-editor-contrast-active.svg");
+    background-size: 17px;
+  }
+
+  .effect-filters__crop,
+  .effect-filters__fill {
+    background-size: 25px;
+  }
+
+  .upload-photo__pin--set-crop-value {
+    right: 43px;
+  }
+
+  .upload-photo__pin--set-fill-value {
+    left: 23px;
+  }
+
+  .upload-photo__pin--set-contrast-value {
+    left: 96px;
   }
 }
 
 @media (min-width: @desktop) {
+  .effect-filters {
+    margin-left: 87px;
+    width: 425px;
+    min-height: 189px;
+  }
+
+  .effect-filters__crop,
+  .effect-filters__fill {
+    height: 50px;
+    background-size: 47px;
+  }
+
+  .effect-filters__contrast {
+    background-size: 33px;
+  }
+
+  .effect-filters__crop,
+  .effect-filters__fill,
+  .effect-filters__contrast {
+    background-position: center 0;
+  }
+
+  .upload-photo__pin--set-crop-value {
+    left: 72px;
+    right: auto;
+  }
+
+  .upload-photo__pin--set-fill-value {
+    left: auto;
+    right: 26px;
+  }
+
+  .upload-photo__pin--set-contrast-value {
+    left: auto;
+    right: 112px;
+  }
+
   .upload-photo__buttons {
     display: flex;
   }
