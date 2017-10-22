@@ -72,6 +72,6 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "html",
-     done
+      done
     );
 });
