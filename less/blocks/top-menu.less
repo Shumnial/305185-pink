@@ -22,7 +22,7 @@
   margin-bottom: 30px;
 }
 
-.top-menu__toggle:before {
+.top-menu__toggle::before {
   content: '';
   position: absolute;
   display: block;
@@ -35,7 +35,7 @@
   transition: all ease 400ms;
 }
 
-.top-menu__toggle:after {
+.top-menu__toggle::after {
   content: '';
   position: absolute;
   display: block;
@@ -54,11 +54,11 @@
     margin-top: 10px;
 }
 
-.top-menu__toggle.active:after {
+.top-menu__toggle.active::after {
   transform: translateY(-15px) rotate(-45deg);
 }
 
-.top-menu__toggle.active:before {
+.top-menu__toggle.active::before {
   transform: rotate(45deg);
 }
 
