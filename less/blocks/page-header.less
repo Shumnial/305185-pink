@@ -1,20 +1,23 @@
 .page-header {
-  background-color: #1d2631;
+
 }
 
 .page-header__wrapper {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet) {
   .page-header__wrapper {
-    width: 660px;
+
   }
 }
 
 @media (min-width: @desktop) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__wrapper {
     display: flex;
     width: 960px;

@@ -45,9 +45,10 @@
   color: #d22856;
   text-transform: uppercase;
   padding-left: 31px;
+  cursor: default;
 }
 
-.gallery-item__likes::before {
+.gallery-item__likes button {
   position: absolute;
   display: block;
   content: "";
@@ -56,6 +57,9 @@
   height: 15px;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet) {
@@ -90,7 +94,7 @@
     padding-left: 0;
   }
 
-  .gallery-item__likes::before {
+  .gallery-item__likes button {
     top: 0;
     right: 2px;
   }
@@ -102,7 +106,7 @@
     padding-right: 0;
   }
 
-  .gallery-item--panorama .gallery-item__likes::before {
+  .gallery-item--panorama .gallery-item__likes button {
     top: 0;
     right: -32px;
   }
