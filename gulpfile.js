@@ -73,5 +73,5 @@ gulp.task("build", function(done) {
     "style",
     "html",
      done
-   );
+    );
 });
