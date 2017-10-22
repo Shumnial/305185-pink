@@ -9,7 +9,6 @@
 .upload-photo__wrapper {
   .container();
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 
 .upload-photo__button {
@@ -20,6 +19,7 @@
   margin-bottom: 10px;
   color: #d22856;
   border: 3px solid #d22856;
+  background-color: rgba(0, 0, 0, 0);
 
   &:hover {
     color: white;
@@ -77,46 +77,63 @@
 @media (min-width: @tablet) {
   .upload-photo__wrapper {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .upload-photo__wrapper img {
-    margin-left: 60px;
+    padding-top: 55px;
+    padding-bottom: 14px;
   }
 
   .upload-photo__edit {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
+  .upload-photo__buttons {
+    margin-left: 48px;
+    margin-bottom: 40px;
+  }
+
   .upload-photo__button {
+    width: 260px;
     margin: 0;
+  }
+
+  .upload-photo__button--cancel {
+    margin-top: 25px;
   }
 
   .upload-photo__filter-level {
     position: relative;
     top: auto;
     left: auto;
+    width: 202px;
   }
 
   .upload-photo__filter-level--hidden {
     display: block;
   }
-
-  .effect-filters__item {
-    display: flex;
-    align-items: baseline;
-  }
 }
 
 @media (min-width: @desktop) {
+  .upload-photo img {
+    margin-left: 80px;
+    margin-bottom: 41px;
+  }
+
   .upload-photo__edit {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .upload-photo__filter-level {
+    width: 288px;
+  }
+
+  .upload-photo__buttons {
+    margin-left: 90px;
+    margin-bottom: 45px;
   }
 
   .upload-photo__button--post {
@@ -126,5 +143,6 @@
 
   .upload-photo__button--cancel {
     width: 180px;
+    margin-top: 0;
   }
 }

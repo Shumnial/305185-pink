@@ -59,7 +59,7 @@
           <div class="gallery-item">
             <picture>
               <source media="(min-width: 960px)" srcset="/img/photo-drumset-desktop@1x.jpg, /img/photo-drumset-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg, /img/photo-drumset-tablet@2x.jpg 2x">
               <img src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
             </picture>
             <div class="gallery-item__descr">
@@ -72,8 +72,8 @@
           </div>
           <div class="gallery-item">
             <picture>
-              <source media="(min-width: 960px)" srcset="/img/photo-window-desktop@1x.jpg, /img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="/img/photo-window-desktop@1x.jpg, /img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg, /img/photo-window-tablet@2x.jpg 2x">
               <img src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" alt="Фото">
             </picture>
             <div class="gallery-item__descr">
@@ -86,8 +86,8 @@
           </div>
           <div class="gallery-item">
             <picture>
-              <source media="(min-width: 960px)" srcset="/img/photo-fair-desktop@1x.jpg, /img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="/img/photo-fair-desktop@1x.jpg, /img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg, /img/photo-fair-tablet@2x.jpg 2x">
               <img src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Фото">
             </picture>
             <div class="gallery-item__descr">
@@ -100,8 +100,8 @@
           </div>
           <div class="gallery-item">
             <picture>
-              <source media="(min-width: 960px)" srcset="/img/photo-pov-desktop@1x.jpg, /img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="/img/photo-pov-desktop@1x.jpg, /img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg, /img/photo-pov-tablet@2x.jpg 2x">
               <img src="/img/photo-pov-mobile@1x.jpg" srcset="/img/photo-pov-mobile@2x.jpg 2x" alt="Фото">
             </picture>
             <div class="gallery-item__descr">
@@ -114,8 +114,8 @@
           </div>
           <div class="gallery-item">
             <picture>
-              <source media="(min-width: 960px)" srcset="/img/photo-wing-desktop@1x.jpg, /img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="/img/photo-wing-desktop@1x.jpg, /img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg, /img/photo-wing-tablet@2x.jpg 2x">
               <img src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" alt="Фото">
             </picture>
             <div class="gallery-item__descr">
@@ -132,25 +132,29 @@
       </section>
       <section class="upload-photo">
         <div class="upload-photo__wrapper">
-          <img src="img/photo-road-mobile@1x.jpg" alt="Текущее фото">
+          <picture>
+              <source media="(min-width: 960px)" srcset="/img/photo-road-desktop@1x.jpg, /img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+              <img src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Текущее фото">
+            </picture>
           <div class="upload-photo__edit">
             <div class="effect-filters">
               <div class="effect-filters__item">
                 <button class="effect-filters__crop" type="button">Обрезка</button>
                 <div class="upload-photo__filter-level">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-crop-value"></div>
                 </div>
               </div>
               <div class="effect-filters__item">
                 <button class="effect-filters__fill" type="button">Заливка</button>
                 <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-fill-value"></div>
                 </div>
               </div>
               <div class="effect-filters__item">
                 <button class="effect-filters__contrast" type="button">Контраст</button>
                 <div class="upload-photo__filter-level upload-photo__filter-level--hidden">
-                  <div class="upload-photo__pin"></div>
+                  <div class="upload-photo__pin upload-photo__pin--set-contrast-value"></div>
                 </div>
               </div>
             </div>
