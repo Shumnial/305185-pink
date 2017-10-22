@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.gallery-item--panorama {
+  position: relative;
+}
+
 .gallery-item--panorama img {
   position: relative;
   display: block;
@@ -11,6 +15,26 @@
   height: auto;
   top: 0;
   left: ~"calc(-50vw + 50%)";
+}
+
+.gallery-item--panorama::before {
+  position: absolute;
+  display: block;
+  width: 140px;
+  height: 36px;
+  content: "Панорама дня";
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  background-color: #d22856;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-item__descr {

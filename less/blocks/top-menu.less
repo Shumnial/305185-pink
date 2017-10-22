@@ -10,6 +10,59 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.top-menu__toggle {
+  font-size: 0;
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  border: 0;
+  transform: rotate(0deg);
+  transition: all ease 400ms;
+  margin-bottom: 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all ease 400ms;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 30px;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all ease 400ms;
+  }
+}
+
+  .top-menu__toggle.active {
+    background-color: rgba(255, 255, 255, 0.0);
+    opacity: 1;
+    margin-top: 10px;
+
+    &:after {
+      transform: translateY(-15px) rotate(-45deg);
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+  }
+
 @media (min-width: @tablet) {
   .top-menu {
     min-height: 110px;
